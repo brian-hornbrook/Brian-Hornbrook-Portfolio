@@ -74,18 +74,24 @@ const displayProjects = () => {
         const tools = project.tools.join(", ");
 
         projectArea.innerHTML += `
-        <img src="${project.image}" alt="project image">
-        <h4>${project.name}</h4>
-        <p class="description">${project.description}</p>
-        <div class="tools">
-            <p><strong>Skills:</strong> ${skills}</p>
-            <p><strong>Tools:</strong> ${tools}</p>
+        <div class="project-area" >
+            <div class="project-image-area" >
+                <img src="${project.image}" alt="project image">
+            </div>
+            <h4>${project.name}</h4>
+            <div class="project-description-area" >
+                <p>${project.description}</p>
+            </div>
+            <div class="tools">
+                <p><strong>Skills:</strong> ${skills}</p>
+                <p><strong>Tools:</strong> ${tools}</p>
+            </div>
+            <div class="live-page-button">
+                <a href="${project.link}" target="_blank">
+                    <button>Live Page</button>
+                </a>
+            <div>
         </div>
-        <div class="live-page-button">
-            <a href="${project.link}" target="_blank">
-                <button>Live Page</button>
-            </a>
-        <div>
         `
     });
 }
