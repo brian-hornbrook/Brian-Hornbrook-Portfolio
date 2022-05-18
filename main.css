@@ -34,9 +34,7 @@ h2 {
 
 /***** PROJECTS *****/
 #projects {
-    display: flex;
-    flex-flow: column;
-    align-items: center;
+    text-align: center;
 }
 
 #projects h2,
@@ -49,13 +47,10 @@ h2 {
     margin: 0;
 }
 
-#projects .project-area {
-    margin: 30px 0;
-}
-
-#projects .project-image-area {
+#projects .image-area {
     display: flex;
     align-items: center;
+    padding: 30px 20px;
 }
 
 #projects img {
@@ -73,6 +68,7 @@ h2 {
 #projects p {
     width: 100%;
     margin: 40px 0;
+    justify-content: space-around;
 }
 
 #projects .live-page-button {
@@ -140,6 +136,9 @@ h2 {
 /***** ABOUT *****/
 #about {
     margin: 80px 30px 70px 30px;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
 }
 
 #about h2,
@@ -148,17 +147,24 @@ h2 {
     text-align: center;
 }
 
+#about #image-area {
+    width: 70%;
+}
+
 #about img {
     width: 100%;
-    margin-bottom: 40px;
 }
 
 #about h2 {
-    margin: 40px 0 60px 0;
+    margin: 40px 0 40px 0;
 }
 
 #about h3 {
-    margin: 60px 0 40px 0;
+    margin: 40px 0 40px 0;
+}
+
+#about #message {
+    font-size: 1.2rem;
 }
 
 
@@ -218,8 +224,13 @@ header h2 {
 /***** FOOTER *****/
 footer {
     padding: 90px 0 90px 0;
-    color: #EEEFDA;
     text-align: center;
+}
+
+footer,
+footer i.icon,
+footer a:link {
+    color: #EEEFDA;
 }
 
 footer h2,
@@ -238,7 +249,6 @@ footer p {
 
 footer i.icon {
     margin: 0 10px;
-    color: #EEEFDA;
     font-size: 1.8em;
 }
 
@@ -246,28 +256,24 @@ footer i.icon {
 
 /***** TABLET *****/
 @media (min-width: 768px) {
-    /***** PROJECTS *****/
 
-    #projects #projects-info {
+    /***** PROJECTS *****/
+    #projects #info {
         display: flex;
         flex-flow: row wrap;
         box-sizing: border-box;
         justify-content: space-between;
     }
 
-    #projects .project-area {
+    #projects .area {
         width: 50%;
         padding: 0 20px;
         box-sizing: border-box;
-    }
-
-    #projects .project-area {
         text-align: center;
     }
 
-    #projects .project-image-area {
-        height: 215px;
-        margin: 20px 0 40px 0;
+    #projects .image-area {
+        height: 300px;
     }
 
 
@@ -287,7 +293,6 @@ footer i.icon {
     }
 
     #skills p {
-        width: 50%;
         box-sizing: border-box;
     }
 
@@ -306,7 +311,7 @@ footer i.icon {
 
     header nav a {
         margin-bottom: 30px;
-        font-size: 1.1rem;
+        font-size: 1.3rem;
     }
 
     header h1 {
@@ -324,6 +329,60 @@ footer i.icon {
 
     footer .footer-info {
         width: 50%;
+    }
+
+}
+
+
+
+/***** DESKTOP *****/
+@media (min-width: 1200px) {
+
+    /***** PROJECTS *****/
+    #projects #info {
+        margin-top: 40px;
+    }
+
+    #projects .area {
+        padding: 30px 20px;
+        width: 50%;
+    }
+
+    #projects .image-area {
+        height: 400px;
+    }
+
+
+
+    /***** ABOUT *****/
+    #about #image-area {
+        width: 50%;
+    }
+
+
+    /***** HEADER *****/
+    header ul {
+        justify-content: flex-end;
+    }
+
+    header li {
+        margin: 0 20px;
+    }
+
+    header nav a {
+        font-size: 1.3rem;
+    }
+
+    header h1 {
+        font-size: 4rem;
+    }
+
+    header h2 {
+        font-size: 2.3rem;
+    }
+
+    header #info {
+        margin: 60px 0;
     }
 
 }

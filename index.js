@@ -1,4 +1,4 @@
-const projectArea = document.querySelector("#projects-info");
+const projectArea = document.querySelector("#projects #info");
 const skillArea = document.querySelector("#skill-area");
 const projects = [
     {
@@ -74,8 +74,8 @@ const displayProjects = () => {
         const tools = project.tools.join(", ");
 
         projectArea.innerHTML += `
-        <div class="project-area" >
-            <div class="project-image-area" >
+        <div class="area" >
+            <div class="image-area" >
                 <img src="${project.image}" alt="project image">
             </div>
             <h4>${project.name}</h4>
