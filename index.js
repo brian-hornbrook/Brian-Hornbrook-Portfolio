@@ -4,7 +4,7 @@ const projects = [
     {
         image: "img/super sticky notes.png",
         name: "Super Sticky Notes",
-        description: "Type a beautifully designed sticky note, refresh and it's still there! Also you can modify and delete your notes.",
+        description: "Create a beautifully designed sticky note, refresh and it's still there! Also you can modify and delete your notes.",
         skills: [
             "React / JSX",
             "JavaScript"
@@ -20,7 +20,7 @@ const projects = [
     {
         image: "img/best-buy.png",
         name: "Mock Best Buy Site",
-        description: "Want a new piece of cool tech, look no further! Site is layed out easy to find what you are looking for.",
+        description: "Dreaming of new cool tech, look no further! Site is layed out easy to find what you are looking for.",
         skills: [
             "Responsive Design",
             "React / JSX",
