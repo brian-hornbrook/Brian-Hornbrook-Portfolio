@@ -1,4 +1,4 @@
-const projectArea = document.querySelector("#projects #info");
+const projectArea = document.querySelector("#projects #projecs-info");
 const skillArea = document.querySelector("#skill-area");
 const projects = [
     {
